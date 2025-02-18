@@ -10,7 +10,7 @@ Feature: Account Management
 
     Examples:
       | firstname | lastname | email               | password   | confirmPassword |
-      | Adam      | Scott    | adamscoop@gmail.com | Testing12! | Testing12!      |
+      | Adam      | Scott    | adamscoot@gmail.com | Testing12! | Testing12!      |
 
   @DuplicateAccountCreationNotAllowed
   Scenario Outline: Create an account using the same email address
@@ -21,7 +21,7 @@ Feature: Account Management
 
     Examples:
       | firstname | lastname | email               | password   | confirmPassword |
-      | Adam      | Scott    | adamscoop@gmail.com | Testing12! | Testing12!      |
+      | Adam      | Scott    | adamscoot@gmail.com | Testing12! | Testing12!      |
 
   @AccountLogin
   Scenario Outline: Account Login with registered username and password
@@ -32,7 +32,7 @@ Feature: Account Management
 
     Examples:
       | email               | password   |
-      | adamscoop@gmail.com | Testing12! |
+      | adamscoot@gmail.com | Testing12! |
 
   @UnregisteredCustomerCannotLogin
   Scenario Outline: Account Login with unregistered username and password
